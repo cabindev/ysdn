@@ -14,7 +14,7 @@ $avatar = null;
 if (!empty($_FILES['upload']['tmp_name'])) {
     try {
         $mime   = ImageHelper::validateUpload($_FILES['upload']);
-        $avatar = "/ysdn_thailand/ysdn/auth/avatars/" . ImageHelper::uniqueFilename($mime);
+        $avatar = "/ysdn/auth/avatars/" . ImageHelper::uniqueFilename($mime);
         $dest   = $_SERVER['DOCUMENT_ROOT'] . $avatar;
 
         ImageHelper::resize($_FILES['upload']['tmp_name'], $dest, $mime, 800, 800);
