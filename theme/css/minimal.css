@@ -1,0 +1,257 @@
+/* ========================================
+   YSDN Minimal Theme — global overrides
+   ======================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Noto+Sans+Thai:wght@300;400;500&display=swap');
+
+/* ── CSS Variables ─────────────────────── */
+:root {
+  --font-base: 'Inter', 'Noto Sans Thai', system-ui, sans-serif;
+  --fw-light:  300;
+  --fw-normal: 400;
+  --fw-medium: 500;
+  --fs-base:   13px;
+  --fs-sm:     12px;
+  --fs-lg:     15px;
+  --color-primary:    #f58220;
+  --color-text:       #3a3a3a;
+  --color-text-muted: #8a8a8a;
+  --color-border:     #e8e8e8;
+  --color-bg:         #f7f8fa;
+  --color-surface:    #ffffff;
+  --radius:           8px;
+  --shadow-sm:        0 1px 3px rgba(0,0,0,.06);
+}
+
+/* ── Base ──────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  font-family: var(--font-base) !important;
+  font-weight: var(--fw-light) !important;
+  font-size: var(--fs-base) !important;
+  color: var(--color-text) !important;
+  background-color: var(--color-bg) !important;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: var(--font-base) !important;
+  font-weight: var(--fw-medium) !important;
+  letter-spacing: -0.01em;
+}
+
+p, span, td, th, label, a, li, input, select, textarea, button {
+  font-family: var(--font-base) !important;
+  font-weight: var(--fw-light) !important;
+}
+
+small, .small { font-size: var(--fs-sm) !important; }
+
+/* ── AdminLTE Sidebar ──────────────────── */
+.main-sidebar,
+.main-sidebar .sidebar {
+  background-color: #1c1c1e !important;
+}
+
+.nav-sidebar .nav-link {
+  font-size: var(--fs-sm) !important;
+  font-weight: var(--fw-light) !important;
+  color: rgba(255,255,255,.65) !important;
+  border-radius: var(--radius) !important;
+  margin: 1px 8px !important;
+  padding: 7px 12px !important;
+  transition: background .15s, color .15s;
+}
+
+.nav-sidebar .nav-link:hover,
+.nav-sidebar .nav-link.active {
+  background-color: rgba(255,255,255,.08) !important;
+  color: #fff !important;
+}
+
+.nav-sidebar .nav-link i { width: 18px; font-size: 13px; }
+
+.brand-link {
+  border-bottom: 1px solid rgba(255,255,255,.06) !important;
+  padding: 12px 16px !important;
+}
+
+.brand-text {
+  font-size: 14px !important;
+  font-weight: var(--fw-medium) !important;
+  letter-spacing: .02em;
+}
+
+/* ── AdminLTE Navbar ───────────────────── */
+.main-header.navbar {
+  background-color: var(--color-surface) !important;
+  border-bottom: 1px solid var(--color-border) !important;
+  box-shadow: none !important;
+  min-height: 48px !important;
+}
+
+.main-header .nav-link {
+  color: var(--color-text-muted) !important;
+  font-size: var(--fs-sm) !important;
+}
+
+/* ── Content Area ──────────────────────── */
+.content-wrapper {
+  background-color: var(--color-bg) !important;
+}
+
+.content-header h1 {
+  font-size: 18px !important;
+  font-weight: var(--fw-medium) !important;
+  color: var(--color-text) !important;
+}
+
+.content-header .breadcrumb-item,
+.content-header .breadcrumb-item a {
+  font-size: var(--fs-sm) !important;
+  color: var(--color-text-muted) !important;
+}
+
+/* ── Cards ─────────────────────────────── */
+.card {
+  border: 1px solid var(--color-border) !important;
+  border-radius: var(--radius) !important;
+  box-shadow: var(--shadow-sm) !important;
+}
+
+.card-header {
+  background-color: var(--color-surface) !important;
+  border-bottom: 1px solid var(--color-border) !important;
+  padding: 12px 16px !important;
+  font-size: var(--fs-sm) !important;
+  font-weight: var(--fw-medium) !important;
+  letter-spacing: .02em;
+  text-transform: uppercase;
+}
+
+.card-body { padding: 16px !important; }
+
+/* small info cards */
+.small-box {
+  border-radius: var(--radius) !important;
+  box-shadow: var(--shadow-sm) !important;
+}
+
+.small-box h3 {
+  font-size: 28px !important;
+  font-weight: var(--fw-light) !important;
+}
+
+.small-box p {
+  font-size: var(--fs-sm) !important;
+  font-weight: var(--fw-light) !important;
+}
+
+/* ── Tables ────────────────────────────── */
+.table {
+  font-size: var(--fs-sm) !important;
+  font-weight: var(--fw-light) !important;
+}
+
+.table thead th {
+  font-size: 11px !important;
+  font-weight: var(--fw-medium) !important;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  color: var(--color-text-muted) !important;
+  border-bottom: 1px solid var(--color-border) !important;
+  padding: 8px 12px !important;
+}
+
+.table td {
+  padding: 9px 12px !important;
+  vertical-align: middle !important;
+  border-color: var(--color-border) !important;
+}
+
+/* ── Forms ─────────────────────────────── */
+.form-control, .form-select {
+  font-size: var(--fs-base) !important;
+  font-weight: var(--fw-light) !important;
+  border: 1px solid var(--color-border) !important;
+  border-radius: var(--radius) !important;
+  padding: 7px 11px !important;
+  box-shadow: none !important;
+  transition: border-color .15s;
+}
+
+.form-control:focus, .form-select:focus {
+  border-color: var(--color-primary) !important;
+  box-shadow: 0 0 0 3px rgba(245,130,32,.12) !important;
+}
+
+label {
+  font-size: var(--fs-sm) !important;
+  font-weight: var(--fw-normal) !important;
+  color: var(--color-text-muted) !important;
+  margin-bottom: 4px !important;
+}
+
+/* ── Buttons ───────────────────────────── */
+.btn {
+  font-size: var(--fs-sm) !important;
+  font-weight: var(--fw-normal) !important;
+  border-radius: var(--radius) !important;
+  padding: 6px 14px !important;
+  box-shadow: none !important;
+  transition: opacity .15s, background .15s;
+}
+
+.btn:hover { opacity: .88; }
+
+.btn-primary, .btn-orange {
+  background-color: var(--color-primary) !important;
+  border-color: var(--color-primary) !important;
+  color: #fff !important;
+}
+
+.btn-secondary {
+  background-color: transparent !important;
+  border: 1px solid var(--color-border) !important;
+  color: var(--color-text) !important;
+}
+
+.btn-sm {
+  font-size: 11px !important;
+  padding: 4px 10px !important;
+}
+
+/* ── Badges ────────────────────────────── */
+.badge {
+  font-size: 10px !important;
+  font-weight: var(--fw-normal) !important;
+  border-radius: 4px !important;
+  padding: 3px 7px !important;
+  letter-spacing: .03em;
+}
+
+/* ── Misc ──────────────────────────────── */
+.text-muted { color: var(--color-text-muted) !important; }
+
+.pagination .page-link {
+  font-size: var(--fs-sm) !important;
+  color: var(--color-text) !important;
+  border-color: var(--color-border) !important;
+}
+
+hr { border-color: var(--color-border) !important; opacity: 1; }
+
+/* ── Auth pages (login / register) ─────── */
+.card-login .card,
+.box-with-shadow {
+  border: 1px solid var(--color-border) !important;
+  border-radius: 12px !important;
+  box-shadow: 0 4px 24px rgba(0,0,0,.06) !important;
+}
+
+/* ── Scrollbar thin ────────────────────── */
+::-webkit-scrollbar { width: 5px; height: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #d0d0d0; border-radius: 99px; }

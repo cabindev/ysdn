@@ -1,0 +1,29 @@
+{
+    "name": "sdnthailand/ysdn_thailand",
+    "authors": [
+        {
+            "name": "yellow",
+            "email": "evo_reaction@hotmail.com"
+        }
+    ],
+    "require": {
+
+        "claviska/simpleimage": "^4.0",
+        "phpmailer/phpmailer": "^6.8",
+        "endroid/qr-code": "^4.8",
+        "bacon/bacon-qr-code": "^2.0",
+        "endroid/qr-code-bundle": "^4.3",
+        "vlucas/phpdotenv": "^5.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\":"src/"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "endroid/installer": true
+        }
+    }
+    
+}

@@ -1,0 +1,9 @@
+theme/node_modules
+/vendor/
+.env
+.env.*
+logs/*.log
+.DS_Store
+Thumbs.db
+ysdn/auth/avatars/*
+!ysdn/auth/avatars/.gitkeep

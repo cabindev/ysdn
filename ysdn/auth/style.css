@@ -1,0 +1,582 @@
+@import url('/ysdn_thailand/theme/css/minimal.css');
+/* formUser */
+/* #province_code {
+  display : none;
+}
+#member_code {
+  display :none;
+} */
+/* css form */
+#btn-submit{
+  width: 100px;
+  color: #ffffff;
+  background-color: #f58220;
+  border: 0 none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 5px 5px;
+  margin: 10px 5px 10px 0px;
+  float: right;
+}
+#card-header{
+  background-color: #f58220;
+}
+/* Add custom styles to the avatar image */
+
+.rounded-circle {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+
+/* progress register */
+* {
+  margin: 0;
+  padding: 0;
+
+}
+/* unvisited link */
+a:link {
+  color: rgb(6, 5, 5);
+}
+
+/* selected link */
+a:active {
+  color: #f58220 !important;
+}
+html {
+  height: 100%;
+}
+
+/* เลือกสีที่ต้องการ */
+.active {
+  background-color: #f58220 !important;
+  /* คุณอาจต้องเปลี่ยนสีของตัวอักษรด้วย (color) ถ้าเหมาะสม */
+}
+
+
+#heading {
+  text-transform: uppercase;
+  color: #f58220;
+  font-weight: normal;
+}
+
+#msform {
+  text-align: center;
+  position: relative;
+  margin-top: 20px;
+}
+
+#msform fieldset {
+  background: white;
+  border: 0 none;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  padding-bottom: 20px;
+  /*stacking fieldsets above each other*/
+  position: relative;
+}
+
+.form-card {
+  text-align: left;
+}
+
+/*Hide all except first fieldset*/
+#msform fieldset:not(:first-of-type) {
+  display: none;
+}
+
+#msform input,
+#msform textarea {
+  padding: 8px 15px 8px 15px;
+  border: 0px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 3px;
+  margin-top: 2px;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: montserrat;
+  color: #2C3E50;
+  background-color: #ECEFF1;
+  font-size: 14px;
+  letter-spacing: 0px;
+}
+
+#msform input:focus,
+#msform textarea:focus {
+  -moz-box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  border: 1px solid #f58220;
+  outline-width: 0;
+}
+
+/*Next Buttons*/
+#msform .action-button {
+  width: 100px;
+  background: #f58220;
+  font-weight: bold;
+  color: white;
+  border: 0 none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 10px 5px;
+  margin: 10px 0px 10px 5px;
+  float: right;
+}
+
+#msform .action-button:hover,
+#msform .action-button:focus {
+  background-color: #f58220;
+}
+
+/*Previous Buttons*/
+#msform .action-button-previous {
+  width: 100px;
+  background: #616161;
+  font-weight: bold;
+  color: white;
+  border: 0 none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 10px 5px;
+  margin: 10px 5px 10px 0px;
+  float: right;
+}
+
+/* Button login */
+#btn-login {
+  width: 100px;
+  color: #f58220;
+  border: 0 none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 5px 5px;
+  margin: 10px 5px 10px 0px;
+  float: right;
+}
+
+#msform .action-button-previous:hover,
+#msform .action-button-previous:focus {
+  background-color: #000000;
+}
+
+/*The background card*/
+.card {
+  z-index: 0;
+  border: none;
+  position: relative;
+}
+
+/*FieldSet headings*/
+.fs-title {
+  font-size: 25px;
+  color: #f58220;
+  margin-bottom: 15px;
+  font-weight: normal;
+  text-align: left;
+}
+
+.purple-text {
+  color: #f58220;
+  font-weight: normal;
+}
+
+/*Step Count*/
+.steps {
+  font-size: 25px;
+  color: gray;
+  margin-bottom: 10px;
+  font-weight: normal;
+  text-align: right;
+}
+
+/*Field names*/
+.fieldlabels {
+  color: gray;
+  text-align: left;
+}
+
+/*Icon progressbar*/
+#progressbar {
+  margin-bottom: 30px;
+  overflow: hidden;
+  color: lightgrey;
+  display: flex;
+  justify-content: space-between;
+}
+
+#progressbar .active {
+  color: #f58220;
+}
+
+#progressbar li {
+  list-style-type: none;
+  font-size: 15px;
+  width: 20%;
+  float: left;
+  position: relative;
+  font-weight: 400;
+  text-align: center;
+}
+
+/*Icons in the ProgressBar*/
+#progressbar #account:before {
+  font-family: FontAwesome;
+  content: "13e";
+}
+
+#progressbar #personal:before {
+  font-family: FontAwesome;
+  content: "007";
+}
+
+#progressbar #address:before {
+  font-family: FontAwesome;
+  content: "041";
+}
+
+#progressbar #payment:before {
+  font-family: FontAwesome;
+  content: "030";
+}
+
+#progressbar #confirm:before {
+  font-family: FontAwesome;
+  content: "00c";
+}
+
+/*Icon ProgressBar before any progress*/
+#progressbar li:before {
+  width: 50px;
+  height: 50px;
+  line-height: 45px;
+  display: block;
+  font-size: 20px;
+  color: #ffffff;
+  background: lightgray;
+  border-radius: 50%;
+  margin: 0 auto 10px auto;
+  padding: 2px;
+}
+
+/*ProgressBar connectors*/
+#progressbar li:after {
+  content: '';
+  justify-content: center;
+  width: 100%;
+  height: 2px;
+  background: lightgray;
+  position: absolute;
+  left: -50%;
+  top: 25px;
+  z-index: -1;
+}
+
+/*Color number of the step and the connector before it*/
+#progressbar li.active:before,
+#progressbar li.active:after {
+  background: #f58220;
+}
+
+/*Animated Progress Bar*/
+.progress {
+  height: 20px;
+}
+
+.progress-bar {
+  background-color: #ffffff;
+}
+
+/*Fit image in bootstrap div*/
+.fit-image {
+  width: 100%;
+  object-fit: cover;
+}
+
+
+/* .............สิ้นสุด prograssbar */
+
+/* btn reset */
+.btn-reset {
+  background-color: #f58220;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-reset:hover {
+  background-color: #0f0904;
+}
+
+
+  /* CSS Autocomplete*/
+.autocomplete-option {
+  cursor: pointer;
+}
+
+.autocomplete-option:hover,
+.autocomplete-active {
+  background-color: #e9e9e9;
+}
+
+.autocomplete-container {
+  position: relative;
+}
+
+.autocomplete-list {
+  position: absolute;
+  background-color: #f9f9f9;
+  border: 1px solid #ac3232;
+  border-top: none;
+  z-index: 999;
+  width: 100%;
+  max-height: 5px;
+  overflow-y: auto;
+  padding: 0;
+  margin-top: 0;
+  background-color: chocolate;
+}
+
+.autocomplete-option {
+  padding: 10px;
+  cursor: pointer;
+
+}
+
+.autocomplete-option:hover {
+  background-color: #e9e9e9;
+}
+
+/* Global styles เปลี่ยนพื้นหลังที่ body ทั้งหมด */
+/* body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-image: url('./img/ART-01.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+} */
+
+/* card-Member Profile*/
+/* ส่วน CSS ที่มีอยู่แล้วใน card-Member Profile */
+/* CSS สำหรับแสดงเมนูเมื่อมี class "show" */
+/* CSS สำหรับแสดงเมนูเมื่อมี class "show" กับ container เมนู */
+/* CSS สำหรับแสดงเมนูเมื่อไม่มี class "menu-hidden" */
+
+#menu-profile {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+
+}
+
+
+.card-Member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  padding: 5px;
+ 
+  border-radius: 5px;
+  background-color: 0 4px 8px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 8px rgba(58, 29, 29, 0.1);
+
+}
+
+.avatar-container {
+  width: 200px; /* กำหนดขนาดความกว้าง */
+  height: 200px; /* กำหนดขนาดความสูง */
+  overflow: hidden; /* ซ่อนส่วนที่เกินขอบ */
+  border-radius: 50%; /* ทำให้ภาพเป็นวงกลม */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar {
+  object-fit: cover; /* ปรับภาพให้เต็มพื้นที่โดยไม่เปลี่ยนสัดส่วน */
+  width: 100%; /* กำหนดความกว้างเต็มพื้นที่ */
+  height: 100%; /* กำหนดความสูงเต็มพื้นที่ */
+}
+
+
+
+
+.name {
+  font-size: 20px; /* ขยายขนาดฟอนต์ */
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.email, .member-code, .age {
+  font-size: 14px;
+  color: #333; /* เปลี่ยนสีข้อความ */
+  margin-bottom: 5px;
+}
+#qrcode {
+  border-radius: 10px; /* เปลี่ยนเป็นค่าที่คุณต้องการ */
+  width: 200px; /* กำหนดความกว้างตามที่คุณต้องการ */
+  height: 200px; /* กำหนดความสูงตามที่คุณต้องการ */
+  margin: 0 auto; /* จัดให้อยู่กึ่งกลาง */
+  /* การใช้ Flexbox สำหรับการจัดวางองค์ประกอบที่อยู่ภายในให้อยู่ตรงกลาง */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-save {
+
+  color: white; /* สีข้อความ */
+  border: none; /* ไม่มีขอบ */
+  padding: 15px; /* ระยะห่างภายในปุ่ม */
+  cursor: pointer; /* แสดงเคอร์เซอร์เป็นมือเมื่อคลิก */
+  font-size: 16px; /* ขนาดข้อความ */
+  border-radius: 50%; /* ทำให้ปุ่มเป็นรูปวงกลม */
+}
+
+.btn-save i.fas {
+  color: #ffffff; /* สีของ icon */
+  animation: spin 2s infinite linear; /* หมุน icon */
+}
+
+.btn-save:hover {
+  background-color: #f58220; /* สีพื้นหลังเมื่อ hover */
+}
+
+@keyframes outlineRun {
+  0% {
+    border-color: transparent;
+  }
+  100% {
+    border-color: #f58220;
+  }
+}
+
+.card-Member.outline {
+  animation: outlineRun 1s linear forwards;
+  border: 3px solid transparent;
+}
+
+
+/* กำหนดสีพื้นหลังและขนาดของ Sidebar */
+#sidebar { 
+  background-color: rgba(252, 238, 226, 0.1); /* เปลี่ยนเป็น RGBA โดยกำหนดค่า alpha เป็น 0.8 */
+  width: 260px;
+  font-size: 18px;  /* ปรับขนาดตัวหนังสือที่นี่ */
+}
+/* จัดการ icon */
+.activity-icon {
+  text-decoration: none !important;
+}
+.activity-icon {
+  margin-right: 10px; /* เพิ่มระยะห่างของปุ่ม */
+}
+
+.activity-icons i {
+  font-size: 25px; /* ขนาดของไอคอน */
+  color: #0c0c0b;
+}
+
+/* ย้าย #sidebar ไปอยู่ด้านล่างของ #card เมื่อหน้าจอมีขนาดไม่เกิน 576px */
+@media (max-width: 576px) {
+  #sidebar {
+    display: none;  /* หรือ flex หากคุณใช้ flexbox ในการจัดวาง sidebar */
+    width: 100%; /*แสดงรูปเต็มจอเมื่ออยู่หน้าจอขนาดเล็ก*/
+  }
+}
+/* CSS for small screens */
+@media (max-width: 576px) {
+  .activity-icons .activity-icon i {
+    color: #0c0c0b; 
+    font-size: 25px;
+    padding: 10px;
+    object-fit: cover;
+    
+  }
+  #canvas {
+    width: 100%; /* ใช้ความกว้างเท่ากับความกว้างของหน้าจอ */
+    height: 100%; /* ใช้ความสูงเท่ากับความสูงของหน้าจอ */
+   
+}
+}
+/* Style for the active icon แสดงเมนูกิจกรรม*/
+.activity-icon.active i {
+  color: #f58220; /* สีส้มตามที่คุณต้องการ */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* เพิ่มเอฟเฟกต์แสงเงา */
+  border-radius: 50%; /* ทำให้มีรูปร่างวงกลม */
+  background-color: #fff; /* สีพื้นหลังของ icon */
+}
+
+/* สิ้นสุด Media Queries สำหรับขนาดหน้าจอเล็ก */
+
+/* กำหนดสีและตัวหนังสือของชื่อเมนู */
+.menu-item {
+  color: #f58220 !important; 
+  font-weight: bold;
+
+}
+
+/* กำหนดลักษณะเมนูย่อย */
+.list-group {
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+/* กำหนดลักษณะเมนูย่อยเมื่อเม้าส์ Hover */
+.list-group a:hover {
+  background-color: #f58220;
+  color: #fff;
+}
+
+/* กำหนดลักษณะเมนูที่ถูกเลือก (active) */
+.list-group a.list-group-item-warning {
+  background-color: #3a320f; 
+  color: #fff;
+}
+
+/* กำหนดขอบส่วนล่างของเมนูที่ถูกเลือก */
+.list-group a.list-group-item-warning::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 5px;
+  height: 100%;
+  background-color: #f58220; 
+}
+/* ปุ่มดาวโหลดรูป */
+.btn.btn-save {
+  position: relative;
+  padding-top: 0.1px; /* กำหนดระยะห่างด้านบนเพิ่มขึ้นเป็น 20px */
+}
+
+.btn.btn-save i {
+  position: absolute;
+  right: 0;
+  bottom: 10px; /* ลอยขึ้น 10px จากด้านล่าง */
+  transform: translateX(-50%); /* ไม่ต้องปรับตำแหน่งตามแนวแกน Y อีก */
+}
+
+/* สีลิงก์ที่ยังไม่ถูกคลิก */
+.dropdown-menu a.dropdown-item {
+  color: #000; /* เปลี่ยนสีตามที่คุณต้องการ */
+}
+
+/* สีลิงก์เมื่อคลิกแล้ว */
+.dropdown-menu a.dropdown-item:hover {
+  background-color: transparent; /* ตัวอย่าง: ลบสีพื้นหลัง */
+}

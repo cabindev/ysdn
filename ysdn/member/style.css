@@ -1,0 +1,115 @@
+@import url('/ysdn_thailand/theme/css/minimal.css');
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* CSS */
+.autocomplete-option {
+  cursor: pointer;
+}
+
+.autocomplete-option:hover,
+.autocomplete-active {
+  background-color: #e9e9e9;
+}
+#province_code {
+  display: none;
+}
+/* #member_code {
+  display: none;
+} */
+.autocomplete-container {
+  position: relative;
+}
+
+.autocomplete-list {
+  position: absolute;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-top: none;
+  z-index: 999;
+  width: 100%;
+  max-height: 150px;
+  overflow-y: auto;
+  padding: 0;
+  margin-top: 0;
+}
+
+.autocomplete-option {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.autocomplete-option:hover {
+  background-color: #e9e9e9;
+}
+  /* profile */
+/* กำหนดสไตล์ของตาราง */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+
+/* กำหนดขนาดรูปภาพอวาตาร์ */
+.avatar {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* toggle form */
+
+.switch-container {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+}
+
+.switch-container input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.switch-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: gray;
+  transition: .4s;
+  border-radius: 20px;
+}
+
+.switch-slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .switch-slider {
+  background-color: green;
+}
+
+input:checked + .switch-slider:before {
+  transform: translateX(20px);
+}

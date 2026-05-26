@@ -1,0 +1,193 @@
+@import url('/ysdn_thailand/theme/css/minimal.css');
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+#root {
+    max-width: 800px;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+.form-container {
+    padding: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.submit-btn {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+/* สร้าง class ใหม่สำหรับ "สร้างหมวดหมู่" */
+.create-category-active {
+  background-color: #ff9900 !important; /* สีพื้นหลัง */
+  color: #ffffff !important; /* สีข้อความ */
+}
+
+/* หน้า all_activity.php */
+/* Sidebar styles */
+/* กำหนดสีและตัวหนังสือของชื่อเมนู */
+.menu-item {
+  color: #f58220;
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+/* กำหนดลักษณะเมนูย่อย */
+.list-group {
+  margin-left: 5px;
+  margin-top: 25px;
+}
+/* กำหนดลักษณะเมนูย่อยเมื่อเม้าส์ Hover */
+.list-group a:hover {
+  background-color: #f58220;
+  color: #fff;
+}
+/* กำหนดลักษณะเมนูที่ถูกเลือก (active) */
+.list-group a.active {
+  background-color: #ff9900; /* สีพื้นหลัง */
+  border-color: #f58220; /* สีขอบ */
+  color: #fff; /* สีข้อความ */
+}
+/* กำหนดขอบส่วนล่างของเมนูที่ถูกเลือก */
+.list-group a.active::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 5px;
+  height: 100%;
+  background-color: #A2C579;
+}
+
+/* pagination */
+/* สีของ pagination items */
+.pagination .page-item .page-link {
+  color: #f58220; /* สีข้อความ */
+  background-color: #ffffff; /* สีพื้นหลัง */
+  border-color: #dee2e6; /* สีขอบ */
+}
+
+/* สีของ pagination item ที่ active */
+.pagination .page-item.active .page-link {
+  color: #ffffff; /* สีข้อความ */
+  background-color: #f58220; /* สีพื้นหลัง */
+
+}
+
+/* สีของ pagination item ที่ hover */
+.pagination .page-item .page-link:hover {
+  color: #000306; /* สีข้อความ */
+  background-color: #e9ecef; /* สีพื้นหลัง */
+  border-color: #dee2e6; /* สีขอบ */
+}
+
+/* ปุ่ม ลบ แก้ไข หน้า all_edit_activity.php */
+.custom-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 10px;  /* ลดขนาด padding */
+  border: none;
+  cursor: pointer;
+  font-size: 12px;  /* ลดขนาด font */
+  margin-right: 4px;
+  background: none;
+  outline: none;
+  width: auto;
+  min-width: 70px;  /* ลดขนาดขั้นต่ำของปุ่ม */
+  box-sizing: border-box;
+  transition: background-color 0.3s ease;
+}
+
+.edit-btn {
+  background-color: #032e13;
+  color: white;
+}
+
+.edit-btn:hover {
+  background-color: #FFCC33;
+}
+
+.delete-btn {
+  background-color: #dc3545;
+  color: white;
+}
+
+.delete-btn:hover {
+  background-color: #c82333;
+}
+/* ปุ่มสมัคร */
+.icon-button {
+  background-color: #FFDEAD; 
+  color: black; 
+  padding: 10px 10px; 
+  border-radius: 5px; 
+  text-decoration: none; 
+}
+.icon-button:hover {
+  background-color:#A2C579; 
+  color: black; 
+}
+
+.icon-button i {
+  margin-right: 5px; 
+}
+/* แบนเนอร์ */
+header {
+  text-align: center; /* จัดข้อความตรงกลาง */
+  padding: 20px; /* ระยะห่างด้านบนและด้านล่างของแบนเนอร์ */
+  background-color: #f8f9fa; /* สีพื้นหลังของแบนเนอร์ */
+}
+
+img.img-fluid {
+  max-width: 100%; /* รูปภาพจะไม่เกินขอบของคอลัมน์ */
+  height: auto; /* ความสูงของรูปภาพจะปรับให้เหมาะกับความกว้าง */
+}
+
+/* สี activity.php  */
+
+.card-text {
+    color: #6f6e6d;
+}
+.name {
+  display: inline;
+  color: #f58220;
+}
+
+
+
+
+
+  

@@ -1,0 +1,84 @@
+@import url('/ysdn_thailand/theme/css/minimal.css');
+/* Profile ADMINLTE */
+#avatar {
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    object-fit: cover;
+  }
+  .rounded-circle {
+    border-radius: 50%;
+    object-fit: cover; /* ให้รูปภาพเต็มขนาดแต่ไม่เบี้ยว */
+  }
+  
+.user-panel{
+    display: flex;
+    justify-content: center;
+
+}
+.image{
+  display:flex;
+  justify-content: center;
+  object-fit: cover !important;
+}
+.user-detial {
+  display: flex;
+  justify-content: center;
+  
+}
+#allTable{
+  display: flex;
+  justify-content: center;
+}
+#avatar-table{
+  width:50;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+}
+.image-table{
+  display:flex;
+  justify-content: center;
+  object-fit: cover;
+}
+/* สิ้นสุด Profile ADMINLTE */
+
+/* แสดงผู้ดูแลระบบ */
+.admin {
+  text-align: center;
+  justify-content: center;
+}
+
+.admin-avatar {
+  display: inline-block;
+  margin: 10px;
+}
+
+.admin-avatar img {
+  width: 60px; /* ปรับขนาดรูป Avatar ตามที่คุณต้องการ */
+  height: 60px; /* ปรับขนาดรูป Avatar ตามที่คุณต้องการ */
+  object-fit: cover;
+  border-radius: 50%; /* ทำให้รูปเป็นรูปวงกลม */
+}
+
+.admin-info p {
+  margin: 5px;
+  font-weight: bold;
+}
+
+/* สีลิงก์ใน Dropdown Menu ที่ยังไม่ถูกคลิก */
+.dropdown-menu .dropdown-item {
+  color: #000; /* เปลี่ยนสีตามที่คุณต้องการ */
+}
+
+/* สีลิงก์ใน Dropdown Menu เมื่อคลิกแล้ว */
+.dropdown-menu .dropdown-item:hover {
+  background-color: transparent; /* เปลี่ยนสีเมื่อคลิกแล้ว */
+}
