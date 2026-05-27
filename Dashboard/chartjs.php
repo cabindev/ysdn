@@ -1,5 +1,5 @@
 <?php
-require $_SERVER['DOCUMENT_ROOT'] . "/ysdn/auth/auth.php";
+require $_SERVER['DOCUMENT_ROOT'] . "/auth/auth.php";
 require_once $_SERVER['DOCUMENT_ROOT'] . "/vendor/autoload.php";
 
 use App\Model\Chart;

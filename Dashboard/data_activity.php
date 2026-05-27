@@ -35,7 +35,7 @@
 </head>
 
 <?php
-require $_SERVER['DOCUMENT_ROOT'] . "/ysdn/auth/auth.php";
+require $_SERVER['DOCUMENT_ROOT'] . "/auth/auth.php";
 require_once $_SERVER['DOCUMENT_ROOT'] . "/vendor/autoload.php";
 
 use App\Model\User;
@@ -135,7 +135,7 @@ $role = $userData['role'] ?? '';
                 <li>
                     <hr class="dropdown-divider">
                 </li>
-                <li><a class="dropdown-item" href="/ysdn/auth/logout.php">Logout</a></li>
+                <li><a class="dropdown-item" href="/auth/logout.php">Logout</a></li>
             </ul>
         </nav>
         <!-- /.navbar -->
