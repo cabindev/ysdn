@@ -1,6 +1,6 @@
 <?php
 session_start();
-require $_SERVER['DOCUMENT_ROOT'] . "/ysdn/auth/csrf.php";
+require $_SERVER['DOCUMENT_ROOT'] . "/auth/csrf.php";
 require $_SERVER['DOCUMENT_ROOT'] . "/vendor/autoload.php";
 
 csrf_verify();

@@ -1,6 +1,6 @@
 <?php
 session_start();
-require $_SERVER['DOCUMENT_ROOT'] . "/ysdn/auth/csrf.php";
+require $_SERVER['DOCUMENT_ROOT'] . "/auth/csrf.php";
 require $_SERVER['DOCUMENT_ROOT'] . "/vendor/autoload.php";
 
 csrf_verify();
@@ -84,7 +84,7 @@ if (empty($_FILES['upload']['tmp_name'])) {
 
 try {
     $mime       = ImageHelper::validateUpload($_FILES['upload']);
-    $avatarPath = "/ysdn/auth/avatars/" . ImageHelper::uniqueFilename($mime);
+    $avatarPath = "/auth/avatars/" . ImageHelper::uniqueFilename($mime);
     $dest       = $_SERVER['DOCUMENT_ROOT'] . $avatarPath;
 
     ImageHelper::resize($_FILES['upload']['tmp_name'], $dest, $mime, 800, 800);

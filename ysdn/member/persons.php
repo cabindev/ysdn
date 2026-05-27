@@ -1,5 +1,5 @@
 <?php
-require $_SERVER['DOCUMENT_ROOT']."/ysdn/auth/auth.php";
+require $_SERVER['DOCUMENT_ROOT']."/auth/auth.php";
 require $_SERVER['DOCUMENT_ROOT']."/vendor/autoload.php";
 
 use App\Model\Person;
@@ -25,7 +25,7 @@ if (isset($person['dob'])) {
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<?php require $_SERVER['DOCUMENT_ROOT']."/ysdn/inc/components/nav.php";?>
+	<?php require $_SERVER['DOCUMENT_ROOT']."/inc/components/nav.php";?>
 </head>		
 <body class="container">
 	<div class="row mt-5">

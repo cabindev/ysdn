@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once $_SERVER['DOCUMENT_ROOT'] . "/ysdn/auth/csrf.php";
+require_once $_SERVER['DOCUMENT_ROOT'] . "/auth/csrf.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">

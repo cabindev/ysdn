@@ -19,7 +19,7 @@ if (!$_SESSION['login']) {
     exit;
 }
 require $_SERVER['DOCUMENT_ROOT'] . "/vendor/autoload.php";
-require $_SERVER['DOCUMENT_ROOT'] . "/ysdn/inc/components/nav.php";
+require $_SERVER['DOCUMENT_ROOT'] . "/inc/components/nav.php";
 
 use App\Model\User;
 use App\Model\Activitycms;
@@ -113,7 +113,7 @@ $count = 0;
                 <a class="dropdown-item" href="profile.php">Profile</a>
                 <a class="dropdown-item" href="editProfile.php">Edit Profile</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="/ysdn/auth/logout.php">Logout</a>
+                <a class="dropdown-item" href="/auth/logout.php">Logout</a>
             </div>
         </div>
     </nav>

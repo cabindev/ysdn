@@ -1,5 +1,5 @@
 <?php
-require $_SERVER['DOCUMENT_ROOT'] . "/ysdn/auth/auth.php";
+require $_SERVER['DOCUMENT_ROOT'] . "/auth/auth.php";
 require $_SERVER['DOCUMENT_ROOT'] . "/vendor/autoload.php";
 
 use App\Model\User;
@@ -14,7 +14,7 @@ $avatar = null;
 if (!empty($_FILES['upload']['tmp_name'])) {
     try {
         $mime   = ImageHelper::validateUpload($_FILES['upload']);
-        $avatar = "/ysdn/auth/avatars/" . ImageHelper::uniqueFilename($mime);
+        $avatar = "/auth/avatars/" . ImageHelper::uniqueFilename($mime);
         $dest   = $_SERVER['DOCUMENT_ROOT'] . $avatar;
 
         ImageHelper::resize($_FILES['upload']['tmp_name'], $dest, $mime, 800, 800);
