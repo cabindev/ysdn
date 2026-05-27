@@ -1,6 +1,6 @@
 <?php
-require $_SERVER['DOCUMENT_ROOT'] . "/ysdn_thailand/ysdn/auth/auth.php";
-require $_SERVER['DOCUMENT_ROOT'] . "/ysdn_thailand/vendor/autoload.php";
+require $_SERVER['DOCUMENT_ROOT'] . "/ysdn/auth/auth.php";
+require $_SERVER['DOCUMENT_ROOT'] . "/vendor/autoload.php";
 
 use App\Model\User;
 use App\Helper\ImageHelper;

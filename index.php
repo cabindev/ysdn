@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YSDN Home</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="/ysdn_thailand/theme/css/bootstrap.css">
+    <link rel="stylesheet" href="/theme/css/bootstrap.css">
     <style>
         body {
             margin: 0;
@@ -113,10 +113,10 @@
             <div class="card">
                 <div class="card-body">
                     <div class="form-control mt-6">
-                        <a href="https://ysdnthailand.com/ysdn_thailand/ysdn/auth/login.php" class="btn btn-primary w-full">Login</a>
+                        <a href="https://ysdnthailand.com/ysdn/auth/login.php" class="btn btn-primary w-full">Login</a>
                     </div>
                     <div class="form-control mt-6">
-                        <a href="https://ysdnthailand.com/ysdn_thailand/ysdn/auth/registerUser.php" class="btn btn-secondary w-full">Signup</a>
+                        <a href="https://ysdnthailand.com/ysdn/auth/registerUser.php" class="btn btn-secondary w-full">Signup</a>
                     </div>
                 </div>
             </div>

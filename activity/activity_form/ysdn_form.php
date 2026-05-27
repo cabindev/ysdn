@@ -1,6 +1,6 @@
 <?php
 session_start();
-require $_SERVER['DOCUMENT_ROOT'] . "/ysdn_thailand/vendor/autoload.php";
+require $_SERVER['DOCUMENT_ROOT'] . "/vendor/autoload.php";
 if (!isset($_SESSION['login'])) {
     header("Location: ../../ysdn/auth/login.php");
     exit;

@@ -14,7 +14,7 @@
 
 <?php
 session_start();
-require $_SERVER['DOCUMENT_ROOT'] . "/ysdn_thailand/vendor/autoload.php";
+require $_SERVER['DOCUMENT_ROOT'] . "/vendor/autoload.php";
 
 use App\Model\User;
 use App\Model\Activitycms;
@@ -47,7 +47,7 @@ $activities = $activityModel->getAllActivities($currentPage, $itemsPerPage);
             <ul class="navbar-nav ml-auto"> <!-- เพิ่ม class ml-auto ที่นี่ -->
                 <?php if (isset($_SESSION['id'])) : ?>
                     <li class="nav-item">
-                        <a class="nav-link" href="/ysdn_thailand/ysdn/auth/logout.php">Logout</a>
+                        <a class="nav-link" href="/ysdn/auth/logout.php">Logout</a>
                     </li>
                 <?php else : ?>
                     <li class="nav-item">

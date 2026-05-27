@@ -1,6 +1,6 @@
 <?php
-require $_SERVER['DOCUMENT_ROOT'] . "/ysdn_thailand/ysdn/auth/auth.php";
-require $_SERVER['DOCUMENT_ROOT'] . "/ysdn_thailand/vendor/autoload.php";
+require $_SERVER['DOCUMENT_ROOT'] . "/ysdn/auth/auth.php";
+require $_SERVER['DOCUMENT_ROOT'] . "/vendor/autoload.php";
 
 use App\Model\Person;
 use App\Helper\ImageHelper;
@@ -14,7 +14,7 @@ $avatar = null;
 if (!empty($_FILES['upload']['tmp_name'])) {
     try {
         $mime   = ImageHelper::validateUpload($_FILES['upload']);
-        $avatar = "/ysdn_thailand/ysdn/member/avatars/" . ImageHelper::uniqueFilename($mime);
+        $avatar = "/ysdn/member/avatars/" . ImageHelper::uniqueFilename($mime);
         ImageHelper::resize($_FILES['upload']['tmp_name'], $_SERVER['DOCUMENT_ROOT'] . $avatar, $mime, 800, 800);
     } catch (\RuntimeException $e) {
         Logger::error('Member avatar upload failed', ['error' => $e->getMessage()]);

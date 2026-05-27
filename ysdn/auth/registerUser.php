@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once $_SERVER['DOCUMENT_ROOT'] . "/ysdn_thailand/ysdn/auth/csrf.php";
+require_once $_SERVER['DOCUMENT_ROOT'] . "/ysdn/auth/csrf.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -12,7 +12,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/ysdn_thailand/ysdn/auth/csrf.php";
     <title>YSDN Register</title>
     <link rel="stylesheet" href="styleUi.css">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
-    <link rel="stylesheet" href="/ysdn_thailand/theme/css/bootstrap.css">
+    <link rel="stylesheet" href="/theme/css/bootstrap.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -35,7 +35,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/ysdn_thailand/ysdn/auth/csrf.php";
 </head>
 
 <?php
-require $_SERVER['DOCUMENT_ROOT'] . "/ysdn_thailand/vendor/autoload.php";
+require $_SERVER['DOCUMENT_ROOT'] . "/vendor/autoload.php";
 
 use App\Model\Person;
 use App\Model\Ref;

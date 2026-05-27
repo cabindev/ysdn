@@ -422,7 +422,7 @@ private function sendResetEmail($email, $token)
 {
     $to = $email;
     $subject = 'Password Reset Request';
-    $link = "http://ysdnthailand.com/ysdn_thailand/ysdn/auth/changPassword.php?token=$token";
+    $link = "http://ysdnthailand.com/ysdn/auth/changPassword.php?token=$token";
     $message = "Click the link below to change your password:<br><a href=\"$link\">กดที่นี่ เพื่อเปลี่ยนรหัสผ่าน</a>";
 
     $mail = new PHPMailer(true);

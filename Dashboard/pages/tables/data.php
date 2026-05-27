@@ -1,6 +1,6 @@
 <?php
-require $_SERVER['DOCUMENT_ROOT'] . "/ysdn_thailand/vendor/autoload.php";
-require $_SERVER['DOCUMENT_ROOT'] . "/ysdn_thailand/ysdn/inc/components/nav.php";
+require $_SERVER['DOCUMENT_ROOT'] . "/vendor/autoload.php";
+require $_SERVER['DOCUMENT_ROOT'] . "/ysdn/inc/components/nav.php";
 use App\Model\User;
 
 //เช็ค SESSION ว่า เป็น true ใหม่ ดูจากหน้า User.php ถ้าเป็น true ให้เข้าไป ถ้าไม่ให้ login ก่อน

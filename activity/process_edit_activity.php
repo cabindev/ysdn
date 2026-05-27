@@ -1,6 +1,6 @@
 <?php
-require $_SERVER['DOCUMENT_ROOT'] . "/ysdn_thailand/ysdn/auth/auth.php";
-require $_SERVER['DOCUMENT_ROOT'] . "/ysdn_thailand/vendor/autoload.php";
+require $_SERVER['DOCUMENT_ROOT'] . "/ysdn/auth/auth.php";
+require $_SERVER['DOCUMENT_ROOT'] . "/vendor/autoload.php";
 
 use App\Model\Activitycms;
 use App\Helper\ImageHelper;
@@ -47,7 +47,7 @@ if (isset($_POST['action'])) {
         try {
             $mime     = ImageHelper::validateUpload($_FILES["activity_cover_image"]);
             $filename = ImageHelper::uniqueFilename($mime);
-            $dir      = $_SERVER['DOCUMENT_ROOT'] . "/ysdn_thailand/activity/images/";
+            $dir      = $_SERVER['DOCUMENT_ROOT'] . "/activity/images/";
             ImageHelper::resize($_FILES["activity_cover_image"]["tmp_name"], $dir . $filename, $mime, 1200, 800);
             $activityData["coverimage"] = $filename;
         } catch (\RuntimeException $e) {

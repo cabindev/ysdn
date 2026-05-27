@@ -1,7 +1,7 @@
 <?php
 session_start();
-require_once $_SERVER['DOCUMENT_ROOT'] . "/ysdn_thailand/ysdn/auth/csrf.php";
-require $_SERVER['DOCUMENT_ROOT'] . "/ysdn_thailand/vendor/autoload.php";
+require_once $_SERVER['DOCUMENT_ROOT'] . "/ysdn/auth/csrf.php";
+require $_SERVER['DOCUMENT_ROOT'] . "/vendor/autoload.php";
 
 use App\Model\User;
 use App\Helper\Logger;
@@ -34,7 +34,7 @@ $token = $_GET['token'] ?? '';
 ?>
 <html>
 <head>
-    <link rel="stylesheet" href="/ysdn_thailand/theme/css/bootstrap.css">
+    <link rel="stylesheet" href="/theme/css/bootstrap.css">
     <title>Change Password</title>
 </head>
 <body>

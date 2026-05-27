@@ -3,6 +3,6 @@ session_start();
 
 $_SESSION = [];
 
-header("location: /ysdn_thailand/activity/index.php");
+header("location: /activity/index.php");
 
 ?>

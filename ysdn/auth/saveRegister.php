@@ -1,7 +1,7 @@
 <?php
 session_start();
-require $_SERVER['DOCUMENT_ROOT'] . "/ysdn_thailand/ysdn/auth/csrf.php";
-require $_SERVER['DOCUMENT_ROOT'] . "/ysdn_thailand/vendor/autoload.php";
+require $_SERVER['DOCUMENT_ROOT'] . "/ysdn/auth/csrf.php";
+require $_SERVER['DOCUMENT_ROOT'] . "/vendor/autoload.php";
 
 csrf_verify();
 
@@ -84,7 +84,7 @@ if (empty($_FILES['upload']['tmp_name'])) {
 
 try {
     $mime       = ImageHelper::validateUpload($_FILES['upload']);
-    $avatarPath = "/ysdn_thailand/ysdn/auth/avatars/" . ImageHelper::uniqueFilename($mime);
+    $avatarPath = "/ysdn/auth/avatars/" . ImageHelper::uniqueFilename($mime);
     $dest       = $_SERVER['DOCUMENT_ROOT'] . $avatarPath;
 
     ImageHelper::resize($_FILES['upload']['tmp_name'], $dest, $mime, 800, 800);
@@ -126,7 +126,7 @@ $userData = [
 
 try {
     $user->createUser($userData);
-    header("location: /ysdn_thailand/ysdn/auth/profile.php");
+    header("location: /ysdn/auth/profile.php");
     exit;
 } catch (\Exception $e) {
     Logger::error('User registration failed', ['email' => $email, 'error' => $e->getMessage()]);

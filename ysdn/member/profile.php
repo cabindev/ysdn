@@ -1,6 +1,6 @@
 <?php
-require $_SERVER['DOCUMENT_ROOT']."/ysdn_thailand/ysdn/auth/auth.php";
-require $_SERVER['DOCUMENT_ROOT']."/ysdn_thailand/vendor/autoload.php";
+require $_SERVER['DOCUMENT_ROOT']."/ysdn/auth/auth.php";
+require $_SERVER['DOCUMENT_ROOT']."/vendor/autoload.php";
 use App\Model\Person;
 use App\Model\User;
 use App\Model\Ref;
@@ -10,7 +10,7 @@ use App\Model\Geo;
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<?php require $_SERVER['DOCUMENT_ROOT']."/ysdn_thailand/ysdn/inc/components/nav.php";?>
+	<?php require $_SERVER['DOCUMENT_ROOT']."/ysdn/inc/components/nav.php";?>
 </head>
 <body class="font-mali">
 	<div class="container-fluid">
