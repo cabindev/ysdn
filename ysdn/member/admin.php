@@ -1,5 +1,5 @@
 <?php
-require $_SERVER['DOCUMENT_ROOT'] . "/auth/auth.php";
+require $_SERVER['DOCUMENT_ROOT'] . "/ysdn/auth/auth.php";
 require $_SERVER['DOCUMENT_ROOT'] . "/vendor/autoload.php";
 use App\Model\Person;
 use App\Model\Ref;
@@ -15,7 +15,7 @@ $page = isset($_GET['page']) ? $_GET['page'] : 1;
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <?php require $_SERVER['DOCUMENT_ROOT'] . "/inc/components/nav.php"; ?>
+    <?php require $_SERVER['DOCUMENT_ROOT'] . "/ysdn/inc/components/nav.php"; ?>
 
 </head>
 <body class="font-mali">
