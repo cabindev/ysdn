@@ -47,7 +47,7 @@ $activities = $activityModel->getAllActivities($currentPage, $itemsPerPage);
             <ul class="navbar-nav ml-auto"> <!-- เพิ่ม class ml-auto ที่นี่ -->
                 <?php if (isset($_SESSION['id'])) : ?>
                     <li class="nav-item">
-                        <a class="nav-link" href="/auth/logout.php">Logout</a>
+                        <a class="nav-link" href="/ysdn/auth/logout.php">Logout</a>
                     </li>
                 <?php else : ?>
                     <li class="nav-item">

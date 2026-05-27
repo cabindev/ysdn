@@ -13,7 +13,7 @@
 </head>
 
 <?php
-require $_SERVER['DOCUMENT_ROOT'] . "/auth/auth.php";
+require $_SERVER['DOCUMENT_ROOT'] . "/ysdn/auth/auth.php";
 require $_SERVER['DOCUMENT_ROOT'] . "/vendor/autoload.php";
 
 use App\Model\User;
@@ -83,7 +83,7 @@ $userData = $user_obj->getUserById($_SESSION['id']);
                 <a class="dropdown-item" href="../ysdn/auth/profile.php">Profile</a>
                 <a class="dropdown-item" href="../ysdn/auth/editProfile.php">Edit Profile</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="/auth/logout.php">Logout</a>
+                <a class="dropdown-item" href="/ysdn/auth/logout.php">Logout</a>
             </div>
         </div>
     </nav>

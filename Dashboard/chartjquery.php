@@ -1,5 +1,5 @@
 <?php
-require $_SERVER['DOCUMENT_ROOT'] . "/auth/auth.php";
+require $_SERVER['DOCUMENT_ROOT'] . "/ysdn/auth/auth.php";
 require_once $_SERVER['DOCUMENT_ROOT'] . "/vendor/autoload.php";
 
 use App\Model\Chart;
@@ -162,7 +162,7 @@ function palette(int $i): string {
         </ul>
       </nav>
       <div class="sb-footer">
-        <a href="/auth/logout.php"><i class="fas fa-sign-out-alt"></i> ออกจากระบบ</a>
+        <a href="/ysdn/auth/logout.php"><i class="fas fa-sign-out-alt"></i> ออกจากระบบ</a>
       </div>
     </div>
   </aside>
