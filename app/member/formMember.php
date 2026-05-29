@@ -1,6 +1,6 @@
 <?php
-require __DIR__ . "../../app/auth/auth.php";
-require __DIR__ . "../../vendor/autoload.php";
+require __DIR__ . "/../../app/auth/auth.php";
+require __DIR__ . "/../../vendor/autoload.php";
 
 use App\Model\Person;
 use App\Model\Ref;
@@ -27,7 +27,7 @@ $switchSliderColor = $displayForm == 'block' ? 'green' : 'gray';
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<?php require __DIR__ . "../../app/inc/components/nav.php";?>
+	<?php require __DIR__ . "/../../app/inc/components/nav.php";?>
 </head>		
 <body class="container">
 	<div class="row mt-5">

@@ -1,7 +1,7 @@
 <?php
 session_start();
-require __DIR__ . "../../app/auth/csrf.php";
-require __DIR__ . "../../vendor/autoload.php";
+require __DIR__ . "/../../app/auth/csrf.php";
+require __DIR__ . "/../../vendor/autoload.php";
 
 use App\Model\Activitycms;
 use App\Helper\Input;

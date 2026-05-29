@@ -1,6 +1,6 @@
 <?php
-require __DIR__ . "../../app/auth/auth.php";
-require __DIR__ . "../../vendor/autoload.php";
+require __DIR__ . "/../../app/auth/auth.php";
+require __DIR__ . "/../../vendor/autoload.php";
 
 use App\Model\User;
 use App\Model\Ref;
@@ -15,7 +15,7 @@ if (isset($_REQUEST['action']) == 'edit') {
 <html lang="en">
 
 <head>
-    <?php require __DIR__ . "../../app/inc/components/nav.php"; ?>
+    <?php require __DIR__ . "/../../app/inc/components/nav.php"; ?>
 </head>
 
 <body class="container">

@@ -1,6 +1,6 @@
 <?php
-require __DIR__ . "../app/auth/auth.php";
-require __DIR__ . "../vendor/autoload.php";
+require __DIR__ . "/../app/auth/auth.php";
+require __DIR__ . "/../vendor/autoload.php";
 
 use App\Model\Activitycms;
 use App\Helper\ImageHelper;
@@ -47,7 +47,7 @@ if (isset($_POST['action'])) {
         try {
             $mime     = ImageHelper::validateUpload($_FILES["activity_cover_image"]);
             $filename = ImageHelper::uniqueFilename($mime);
-            $dir      = __DIR__ . "../activity/images/";
+            $dir      = __DIR__ . "/../activity/images/";
             ImageHelper::resize($_FILES["activity_cover_image"]["tmp_name"], $dir . $filename, $mime, 1200, 800);
             $activityData["coverimage"] = $filename;
         } catch (\RuntimeException $e) {

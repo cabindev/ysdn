@@ -1,6 +1,6 @@
 <?php
-require __DIR__ . "../../app/auth/auth.php";
-require __DIR__ . "../../vendor/autoload.php";
+require __DIR__ . "/../../app/auth/auth.php";
+require __DIR__ . "/../../vendor/autoload.php";
 use App\Model\Person;
 use App\Model\Ref;
 use App\Model\Geo;
@@ -15,7 +15,7 @@ $page = isset($_GET['page']) ? $_GET['page'] : 1;
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <?php require __DIR__ . "../../app/inc/components/nav.php"; ?>
+    <?php require __DIR__ . "/../../app/inc/components/nav.php"; ?>
 
 </head>
 <body class="font-mali">

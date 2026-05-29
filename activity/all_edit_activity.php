@@ -10,7 +10,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-icon/favicon.png">
 </head>
 <?php
-require __DIR__ . "../vendor/autoload.php";
+require __DIR__ . "/../vendor/autoload.php";
 
 use App\Model\Activitycms;
 
