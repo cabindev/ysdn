@@ -1,6 +1,6 @@
 <?php
-require $_SERVER['DOCUMENT_ROOT'] . "/ysdn/auth/auth.php";
-require $_SERVER['DOCUMENT_ROOT'] . "/vendor/autoload.php";
+require $_SERVER['DOCUMENT_ROOT'] . "/ysdn/app/auth/auth.php";
+require $_SERVER['DOCUMENT_ROOT'] . "/ysdn/vendor/autoload.php";
 
 use App\Model\User;
 use App\Model\Activitycms;
@@ -135,7 +135,7 @@ $regCounts     = $activityModel->getRegisteredUsersCountForAllActivities();
         </button>
         <div class="dropdown-menu dropdown-menu-right border-0" style="border-radius:10px;min-width:160px;font-size:12px;padding:6px;box-shadow:0 4px 20px rgba(0,0,0,.08)">
           <a class="dropdown-item" href="index.php" style="border-radius:6px;padding:8px 12px"><i class="fas fa-home fa-fw" style="color:#ccc;margin-right:8px"></i> หน้าหลัก</a>
-          <a class="dropdown-item" href="../ysdn/auth/profile.php" style="border-radius:6px;padding:8px 12px"><i class="fas fa-user fa-fw" style="color:#ccc;margin-right:8px"></i> โปรไฟล์</a>
+          <a class="dropdown-item" href="../app/auth/profile.php" style="border-radius:6px;padding:8px 12px"><i class="fas fa-user fa-fw" style="color:#ccc;margin-right:8px"></i> โปรไฟล์</a>
         </div>
       </li>
     </ul>
@@ -160,12 +160,12 @@ $regCounts     = $activityModel->getRegisteredUsersCountForAllActivities();
           <li class="nav-item"><a href="all_activity.php" class="nav-link active"><i class="fas fa-calendar-alt nav-icon"></i><p>จัดการกิจกรรม</p></a></li>
           <li class="nav-item"><a href="../Dashboard/approove_user_activity.php" class="nav-link"><i class="fas fa-clipboard-check nav-icon"></i><p>อนุมัติการลงทะเบียน</p></a></li>
           <li class="nav-header">ระบบ</li>
-          <li class="nav-item"><a href="../ysdn/auth/profile.php" class="nav-link"><i class="fas fa-user-circle nav-icon"></i><p>โปรไฟล์ของฉัน</p></a></li>
-          <li class="nav-item"><a href="../ysdn/auth/editProfile.php" class="nav-link"><i class="fas fa-sliders-h nav-icon"></i><p>ตั้งค่าบัญชี</p></a></li>
+          <li class="nav-item"><a href="../app/auth/profile.php" class="nav-link"><i class="fas fa-user-circle nav-icon"></i><p>โปรไฟล์ของฉัน</p></a></li>
+          <li class="nav-item"><a href="../app/auth/editProfile.php" class="nav-link"><i class="fas fa-sliders-h nav-icon"></i><p>ตั้งค่าบัญชี</p></a></li>
         </ul>
       </nav>
       <div class="sb-footer">
-        <a href="/ysdn/auth/logout.php"><i class="fas fa-sign-out-alt"></i> ออกจากระบบ</a>
+        <a href="/ysdn/app/auth/logout.php"><i class="fas fa-sign-out-alt"></i> ออกจากระบบ</a>
       </div>
     </div>
   </aside>

@@ -311,6 +311,12 @@ class User extends Db
         $stmt = $this->pdo->prepare($sql);
         $stmt->execute(['emailOrName' => $emailOrName]);
         $data = $stmt->fetchAll();
+        
+        // ตรวจสอบว่ามีข้อมูลในฐานข้อมูลหรือไม่
+        if (empty($data)) {
+            return false;
+        }
+        
         $userDB = $data[0];
     
         if (password_verify($password, $userDB['password'])) {

@@ -1,7 +1,7 @@
 <?php
 session_start();
-require $_SERVER['DOCUMENT_ROOT'] . "/ysdn/auth/csrf.php";
-require $_SERVER['DOCUMENT_ROOT'] . "/vendor/autoload.php";
+require $_SERVER['DOCUMENT_ROOT'] . "/ysdn/app/auth/csrf.php";
+require $_SERVER['DOCUMENT_ROOT'] . "/ysdn/vendor/autoload.php";
 
 use App\Model\Activitycms;
 use App\Helper\Input;
@@ -26,7 +26,7 @@ $data = Input::sanitizePost([
 ]);
 
 if (empty($data['user_id'])) {
-    header("Location: /ysdn/auth/login.php");
+    header("Location: /ysdn/app/auth/login.php");
     exit;
 }
 

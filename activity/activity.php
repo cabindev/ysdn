@@ -13,8 +13,8 @@
 </head>
 
 <?php
-require $_SERVER['DOCUMENT_ROOT'] . "/ysdn/auth/auth.php";
-require $_SERVER['DOCUMENT_ROOT'] . "/vendor/autoload.php";
+require $_SERVER['DOCUMENT_ROOT'] . "/ysdn/app/auth/auth.php";
+require $_SERVER['DOCUMENT_ROOT'] . "/ysdn/vendor/autoload.php";
 
 use App\Model\User;
 use App\Model\Activitycms;
@@ -61,7 +61,7 @@ $userData = $user_obj->getUserById($_SESSION['id']);
                     <li><a href="../Dashboard/index.php" class="nav-link px-2 link-dark">Dashboard</a></li>
                 <?php } ?>
                 <li class="nav-item">
-                    <a class="nav-link" href="../ysdn/auth/profile.php" class="nav-link px-2 link-dark">Profile</a>
+                    <a class="nav-link" href="../app/auth/profile.php" class="nav-link px-2 link-dark">Profile</a>
                 </li>
             </ul>
         </div>
@@ -80,10 +80,10 @@ $userData = $user_obj->getUserById($_SESSION['id']);
                         <?php echo ($_SESSION['role']); ?>
                     </span>
                 </a>
-                <a class="dropdown-item" href="../ysdn/auth/profile.php">Profile</a>
-                <a class="dropdown-item" href="../ysdn/auth/editProfile.php">Edit Profile</a>
+                <a class="dropdown-item" href="../app/auth/profile.php">Profile</a>
+                <a class="dropdown-item" href="../app/auth/editProfile.php">Edit Profile</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="/ysdn/auth/logout.php">Logout</a>
+                <a class="dropdown-item" href="/ysdn/app/auth/logout.php">Logout</a>
             </div>
         </div>
     </nav>

@@ -1,8 +1,8 @@
 <?php
 session_start();
-require $_SERVER['DOCUMENT_ROOT'] . "/vendor/autoload.php";
+require $_SERVER['DOCUMENT_ROOT'] . "/ysdn/vendor/autoload.php";
 if (!isset($_SESSION['login'])) {
-    header("Location: ../../ysdn/auth/login.php");
+    header("Location: ../../app/auth/login.php");
     exit;
 }
 use App\Model\User;

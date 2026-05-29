@@ -1,6 +1,6 @@
 <?php
 session_start();
-require $_SERVER['DOCUMENT_ROOT'] . "/vendor/autoload.php";
+require $_SERVER['DOCUMENT_ROOT'] . "/ysdn/vendor/autoload.php";
 
 use App\Model\Activitycms;
 
@@ -14,7 +14,7 @@ if(isset($_SESSION['id'])) {
 } else {
     echo "กรุณาล็อกอินก่อนทำการสมัครกิจกรรม";
     // หรือ redirect ไปยังหน้าล็อกอิน
-    header("Location: /ysdn/auth/login.php");
+    header("Location: /ysdn/app/auth/login.php");
     exit;
 }
 // รับค่า activity_id จาก URL parameter

@@ -14,7 +14,7 @@
 
 <?php
 session_start();
-require $_SERVER['DOCUMENT_ROOT'] . "/vendor/autoload.php";
+require $_SERVER['DOCUMENT_ROOT'] . "/ysdn/vendor/autoload.php";
 
 use App\Model\User;
 use App\Model\Activitycms;
@@ -47,11 +47,11 @@ $activities = $activityModel->getAllActivities($currentPage, $itemsPerPage);
             <ul class="navbar-nav ml-auto"> <!-- เพิ่ม class ml-auto ที่นี่ -->
                 <?php if (isset($_SESSION['id'])) : ?>
                     <li class="nav-item">
-                        <a class="nav-link" href="/ysdn/auth/logout.php">Logout</a>
+                        <a class="nav-link" href="/ysdn/app/auth/logout.php">Logout</a>
                     </li>
                 <?php else : ?>
                     <li class="nav-item">
-                        <a class="nav-link" href="../ysdn/auth/login.php">Login</a>
+                        <a class="nav-link" href="../app/auth/login.php">Login</a>
                     </li>
                 <?php endif; ?>
             </ul>
@@ -68,14 +68,14 @@ $activities = $activityModel->getAllActivities($currentPage, $itemsPerPage);
                     <li><a href="../Dashboard/index.php" class="nav-link px-2 link-dark">Dashboard</a></li>
                 <?php } ?>
                 <li><a href="../activity/activity.php" class="nav-link px-2 link-dark">Activity</a></li>
-                <li><a href="../ysdn/auth/profile.php" class="nav-link px-2 link-dark">Profile</a></li>
+                <li><a href="../app/auth/profile.php" class="nav-link px-2 link-dark">Profile</a></li>
             </ul>
         </div>
         </div>
     </div>
 
     <div>
-        <img src="../ysdn/auth/img/Artboard 1.jpg" class="img-fluid" alt="Banner Image">
+        <img src="../app/auth/img/Artboard 1.jpg" class="img-fluid" alt="Banner Image">
     </div>
     <div class="container text-center">
         <h1>YSDN Activities</h1>
@@ -109,7 +109,7 @@ $activities = $activityModel->getAllActivities($currentPage, $itemsPerPage);
                                     <i class="fas fa-sign-in-alt"></i> สมัคร
                                 </a>
                             <?php else : ?>
-                                <a id="register-button" href="../ysdn/auth/login.php" class="icon-button">
+                                <a id="register-button" href="../app/auth/login.php" class="icon-button">
                                     <i class="fas fa-sign-in-alt"></i> สมัครกิจกรรม
                                 </a>
                             <?php endif; ?>

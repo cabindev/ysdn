@@ -1,6 +1,6 @@
 <?php
-require $_SERVER['DOCUMENT_ROOT'] . "/vendor/autoload.php";
-require $_SERVER['DOCUMENT_ROOT'] . "/ysdn/inc/components/nav.php";
+require $_SERVER['DOCUMENT_ROOT'] . "/ysdn/vendor/autoload.php";
+require $_SERVER['DOCUMENT_ROOT'] . "/ysdn/app/inc/components/nav.php";
 use App\Model\User;
 
 //เช็ค SESSION ว่า เป็น true ใหม่ ดูจากหน้า User.php ถ้าเป็น true ให้เข้าไป ถ้าไม่ให้ login ก่อน
@@ -342,7 +342,7 @@ $role = $userData['role'] ?? '';
                         <td>{$userData['zipcode']}</td>
                         <td>{$userData['type']}</td>
                         <td>
-                        <a href='../../ysdn/auth/formUser.php?id={$userData['id']}&action=edit' class='btn btn-info  btn-sm'>แก้ไข</a>
+                        <a href='../../app/auth/formUser.php?id={$userData['id']}&action=edit' class='btn btn-info  btn-sm'>แก้ไข</a>
                         </td>
                       </tr>
                     ";

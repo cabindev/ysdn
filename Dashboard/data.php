@@ -1,6 +1,6 @@
 <?php
-require $_SERVER['DOCUMENT_ROOT'] . "/ysdn/auth/auth.php";
-require_once $_SERVER['DOCUMENT_ROOT'] . "/vendor/autoload.php";
+require $_SERVER['DOCUMENT_ROOT'] . "/ysdn/app/auth/auth.php";
+require_once $_SERVER['DOCUMENT_ROOT'] . "/ysdn/vendor/autoload.php";
 
 use App\Model\User;
 use App\Helper\Input;
@@ -183,7 +183,7 @@ $userDatas = $user->getAllUser($type);
         </button>
         <div class="dropdown-menu dropdown-menu-right border-0" style="border-radius:10px;min-width:160px;font-size:12px;padding:6px;box-shadow:0 4px 20px rgba(0,0,0,.08)">
           <a class="dropdown-item" href="../activity/index.php" style="border-radius:6px;padding:8px 12px"><i class="fas fa-home fa-fw" style="color:#ccc;margin-right:8px"></i> หน้าหลัก</a>
-          <a class="dropdown-item" href="../ysdn/auth/profile.php" style="border-radius:6px;padding:8px 12px"><i class="fas fa-user fa-fw" style="color:#ccc;margin-right:8px"></i> โปรไฟล์</a>
+          <a class="dropdown-item" href="../app/auth/profile.php" style="border-radius:6px;padding:8px 12px"><i class="fas fa-user fa-fw" style="color:#ccc;margin-right:8px"></i> โปรไฟล์</a>
         </div>
       </li>
     </ul>
@@ -235,19 +235,19 @@ $userDatas = $user->getAllUser($type);
           </li>
           <li class="nav-header">ระบบ</li>
           <li class="nav-item">
-            <a href="../ysdn/auth/profile.php" class="nav-link">
+            <a href="../app/auth/profile.php" class="nav-link">
               <i class="fas fa-user-circle nav-icon"></i><p>โปรไฟล์ของฉัน</p>
             </a>
           </li>
           <li class="nav-item">
-            <a href="../ysdn/auth/editProfile.php" class="nav-link">
+            <a href="../app/auth/editProfile.php" class="nav-link">
               <i class="fas fa-sliders-h nav-icon"></i><p>ตั้งค่าบัญชี</p>
             </a>
           </li>
         </ul>
       </nav>
       <div class="sb-footer">
-        <a href="/ysdn/auth/logout.php">
+        <a href="/ysdn/app/auth/logout.php">
           <i class="fas fa-sign-out-alt"></i> ออกจากระบบ
         </a>
       </div>
@@ -324,8 +324,8 @@ $userDatas = $user->getAllUser($type);
               <td style="color:#bbb;white-space:nowrap"><?= Input::e($row['dob'] ?? '-') ?></td>
               <td style="color:#bbb;font-size:11px"><?= Input::e($row['citizen_id'] ?? '-') ?></td>
               <td style="white-space:nowrap">
-                <a href="../ysdn/auth/edit-form-Admin.php?id=<?= (int)$row['id'] ?>&action=edit" class="btn-action btn-edit">แก้ไข</a>
-                <form method="POST" action="../ysdn/auth/save-form-Admin.php" style="display:inline">
+                <a href="../app/auth/edit-form-Admin.php?id=<?= (int)$row['id'] ?>&action=edit" class="btn-action btn-edit">แก้ไข</a>
+                <form method="POST" action="../app/auth/save-form-Admin.php" style="display:inline">
                   <?= csrf_field() ?>
                   <input type="hidden" name="action" value="delete">
                   <input type="hidden" name="id" value="<?= (int)$row['id'] ?>">
