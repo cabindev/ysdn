@@ -1,6 +1,6 @@
 <?php
 session_start();
-require $_SERVER['DOCUMENT_ROOT'] . "/ysdn/vendor/autoload.php";
+require __DIR__ . "../../vendor/autoload.php";
 
 use App\Model\Activitycms;
 

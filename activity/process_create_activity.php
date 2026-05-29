@@ -1,6 +1,6 @@
 <?php
-require $_SERVER['DOCUMENT_ROOT'] . "/ysdn/app/auth/auth.php";
-require $_SERVER['DOCUMENT_ROOT'] . "/ysdn/vendor/autoload.php";
+require __DIR__ . "../app/auth/auth.php";
+require __DIR__ . "../vendor/autoload.php";
 
 use App\Model\Activitycms;
 use App\Helper\ImageHelper;
@@ -24,7 +24,7 @@ if (empty($activity_name) || empty($activity_date) || empty($activity_descriptio
     exit('กรุณากรอกข้อมูลให้ครบถ้วน');
 }
 
-$targetDirectory = $_SERVER['DOCUMENT_ROOT'] . "/ysdn/activity/images/";
+$targetDirectory = __DIR__ . "../activity/images/";
 
 try {
     $mime     = ImageHelper::validateUpload($_FILES["activity_cover_image"]);

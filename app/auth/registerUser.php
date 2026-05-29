@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once $_SERVER['DOCUMENT_ROOT'] . "/ysdn/app/auth/csrf.php";
+require_once __DIR__ . "../../app/auth/csrf.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -35,7 +35,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . "/ysdn/app/auth/csrf.php";
 </head>
 
 <?php
-require $_SERVER['DOCUMENT_ROOT'] . "/ysdn/vendor/autoload.php";
+require __DIR__ . "../../vendor/autoload.php";
 
 use App\Model\Person;
 use App\Model\Ref;

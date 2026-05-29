@@ -1,6 +1,6 @@
 <?php
 
-require_once $_SERVER['DOCUMENT_ROOT'] . "/ysdn/vendor/autoload.php";
+require_once __DIR__ . "../vendor/autoload.php";
 
 use App\Database\Db;
 use App\Model\User;

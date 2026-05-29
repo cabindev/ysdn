@@ -35,8 +35,8 @@
 </head>
 
 <?php
-require $_SERVER['DOCUMENT_ROOT'] . "/ysdn/app/auth/auth.php";
-require_once $_SERVER['DOCUMENT_ROOT'] . "/ysdn/vendor/autoload.php";
+require __DIR__ . "../app/auth/auth.php";
+require_once __DIR__ . "../vendor/autoload.php";
 
 use App\Model\User;
 use App\Model\Activitycms;

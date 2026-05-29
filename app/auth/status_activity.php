@@ -18,8 +18,8 @@ if (!$_SESSION['login']) {
     header("location:login.php");
     exit;
 }
-require $_SERVER['DOCUMENT_ROOT'] . "/ysdn/vendor/autoload.php";
-require $_SERVER['DOCUMENT_ROOT'] . "/ysdn/app/inc/components/nav.php";
+require __DIR__ . "../../vendor/autoload.php";
+require __DIR__ . "../../app/inc/components/nav.php";
 
 use App\Model\User;
 use App\Model\Activitycms;
