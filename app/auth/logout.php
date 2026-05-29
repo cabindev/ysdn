@@ -3,6 +3,7 @@ session_start();
 
 $_SESSION = [];
 
-header("location: /activity/index.php");
+session_destroy();
+header("location: /ysdn/activity/index.php");
 
 ?>
