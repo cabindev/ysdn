@@ -1,0 +1,7 @@
+RewriteEngine On
+
+# Production: project อยู่ที่ httpdocs/ root ไม่มี /ysdn/ subfolder
+# ดังนั้น strip /ysdn/ prefix ออกเพื่อให้ path ตรงกับโครงสร้างจริง
+# Localhost: ไฟล์นี้อยู่ใน htdocs/ysdn/ แล้ว path ที่ RewriteRule เห็น
+# จะเป็น app/auth/... (ไม่มี ysdn/ นำหน้า) จึงไม่ match และไม่กระทบ
+RewriteRule ^ysdn/(.*)$ /$1 [L]
